@@ -40,7 +40,9 @@ SSH = False
 Website = False
 Server = False
 
-os.system('title MCHacking Tool By PhamDinhQuoc')
+print(f'''
+    {Fore.LIGHTRED_EX} | Made By xNeon |
+''')
 print(f'''
 
     {Fore.LG}        
@@ -285,10 +287,10 @@ if Website:
             fuzz()
 
         else:
-            print('               Ok.')
+            print('               OK.')
 
     else:
-        print('               Ok.')
+        print('               OK.')
 
 if FTP:
     print('')
@@ -302,7 +304,7 @@ if FTP:
         os.system(f'hydra -L {ftp_username_wordlist} -P {ftp_password_wordlist} -I -V -t 4 -K {ip} {the_proto}')
 
     else:
-        print('''               Ok.''')
+        print('''               OK.''')
 
 if SSH:
     print('')
@@ -316,7 +318,7 @@ if SSH:
         os.system(f'hydra -L {ssh_username_wordlist} -P {ssh_password_wordlist} -I -V -t 4 -K {ip} {the_proto}')
 
     else:
-        print('''               Ok.''')
+        print('''               OK.''')
 
 if Server:
     print('')
@@ -356,4 +358,4 @@ if ddos_ask == 'y':
     ddos_threading(dst_ip)
 
 else:
-    print('               Ok.')
+    print('               OK.')
