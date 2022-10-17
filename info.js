@@ -16,9 +16,9 @@
     if(!response.online) return console.log("Unable to get the server information.")
 
     console.log(`
-╔╦╗┌─┐┌┬┐┌─┐  ╔╗ ┬ ┬  ─┐ ┬╔╗╔┌─┐┌─┐┌┐┌
-║║║├─┤ ││├┤   ╠╩╗└┬┘  ┌┴┬┘║║║├┤ │ ││││
-╩ ╩┴ ┴─┴┘└─┘  ╚═╝ ┴   ┴ └─╝╚╝└─┘└─┘┘└┘
+╔╦╗╔═╗╔╦╗╔═╗  ╔╗ ╦ ╦  ═╗ ╦╔╗╔╔═╗╔═╗╔╗╔
+║║║╠═╣ ║║║╣   ╠╩╗╚╦╝  ╔╩╦╝║║║║╣ ║ ║║║║
+╩ ╩╩ ╩═╩╝╚═╝  ╚═╝ ╩   ╩ ╚═╝╚╝╚═╝╚═╝╝╚╝
 \x1b[38;2;173;255;47mServer IP:\x1b[38;5;231m ${args[0]}
 \x1b[38;2;173;255;47mServer Name:\x1b[38;5;231m ${response.hostname}
 \x1b[38;2;173;255;47mServer Port:\x1b[38;5;231m ${response.port}
